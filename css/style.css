@@ -1,0 +1,14 @@
+.btn-app {
+    border-radius: 3px;
+    background-color: #21862a;
+    /* background-color: #f8f9fa; */
+    border: 1px solid #1a6c2d;
+    color: #ffffff;
+    font-size: 16px;
+    height: 120px;
+    margin: 10px 0 10px 10px;
+    min-width: 160px;
+    padding: 30px 5px;
+    position: relative;
+    text-align: center;
+}
