@@ -2,6 +2,10 @@ header > nav > .container-fluid {
     padding-left: 0 !important;
 }
 
+main {
+    height: 100vh;
+}
+
 .btn-app {
     border-radius: 3px;
     background-color: #2dd462;

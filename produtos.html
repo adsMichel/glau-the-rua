@@ -16,7 +16,8 @@
     <nav class="navbar navbar-expand-lg bg-body-secondary">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
-          <img src="./assets/img/waiter-serving-a-drink-on-a-tray-svgrepo-com.svg" alt="Logo" width="30" height="33" class="d-inline-block align-text-top">
+          <img src="./assets/img/waiter-serving-a-drink-on-a-tray-svgrepo-com.svg" alt="Logo" width="30" height="33"
+            class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,40 +40,91 @@
     </nav>
   </header>
 
-  <main>
-    <div class="container my-2">
-      <div class="card card-primary">
-        <div class="card-header" style="background-color: #2dd462;">
-          <h3 class="card-title text-white">Produtos</h3>
-        </div>
-        <form>
+  <main class="container-fluid">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 h-100 py-2 gap-1">
+      <div class="col">
+        <div class="card">
+          <h2 class="text-center p-2">Cadastro de Produtos</h2>
           <div class="card-body">
-            <div class="form-group mb-4">
-              <label for="exampleInputEmail1">Nome</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Mentos">
-            </div>
-            <div class="form-group mb-4">
-              <label for="qtd-produto">Quantidade</label>
-              <input type="text" class="form-control" id="qtd-produto" placeholder="50">
-            </div>
-            <div class="form-group mb-4">
-              <label for="preco-produto">Preço</label>
-              <input type="text" class="form-control" id="preco-produto" placeholder="12,00">
-            </div>
-            <div class="form-group">
-              <label for="img-produto">Imagem</label>
-              <input type="file" class="form-control" id="img-produto">
-            </div>
+            <form action="">
+              <div class="form-group">
+                <label for="nome-produto">Produto</label>
+                <input type="email" class="form-control" id="nome-produto">
+              </div>
+              <div class="form-group">
+                <label for="quantidade-produto">Quantidade</label>
+                <input type="password" class="form-control" id="quantidade-produto">
+              </div>
+              <div class="form-group">
+                <label for="valor-produto">Valor</label>
+                <input type="password" class="form-control" id="valor-produto">
+              </div>
+              <div class="form-group mb-2">
+                <label for="exampleInputFile">Imagem</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="exampleInputFile">
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+              </div>
+            </form>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn bg-success">Salvar</button>
+        </div>
+      </div>
+
+      <div class="col">
+        <!-- novo card table -->
+        <div class="card">
+          <h2 class="text-center p-2">Estoque</h2>
+          <div class="card-body">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Produto</th>
+                  <th>Vendas</th>
+                  <th>Qtd.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Kit Mentos</td>
+                  <td class="text-center"><span class="badge bg-warning">47</span></td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Paçoca</td>
+                  <td class="text-center"><span class="badge bg-success">11</span></td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Tortinha</td>
+                  <td class="text-center"><span class="badge bg-danger">0</span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Brigadeiro</td>
+                  <td class="text-center"><span class="badge bg-info">27</span></td>
+                  <td>30</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
 
