@@ -8,9 +8,9 @@ main {
 
 .btn-app {
     border-radius: 3px;
-    background-color: #2dd462;
-    border: 1px solid #1a6c2d;
-    color: #ffffff;
+    background-color: #90e0ef;
+    border: 1px solid #0077b6;
+    color: #03045e;
     font-size: 16px;
     height: 110px;
     margin: 0px 0 10px 10px;
@@ -26,8 +26,9 @@ main {
 }
 
 .btn-vendas {
-    background-color: #2dd462;
-    color: #fff;
+    background-color: #ade8f4;
+    color: #03045e;
+    border: 1px solid #0077b6;
 }
 
 .small-box {
@@ -129,3 +130,31 @@ main {
     border: 0;
     position: relative;
 }
+
+.divisao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background-color: dodgerblue !important;
+    padding: 10px;
+}
+
+.divisao > div {
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    min-height: 100px;
+  }
+
+  .divisao > div:nth-child(4) {
+    grid-column: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .divisao > div:nth-child(6) {
+    grid-column: 1 / span 2;
+  }

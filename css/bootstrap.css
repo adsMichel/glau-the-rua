@@ -9768,7 +9768,8 @@ fieldset:disabled .btn {
 
 .bg-success {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important
+    /* background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important; */
+    background-color: #00b4d8;
 }
 
 .bg-info {
@@ -9818,7 +9819,8 @@ fieldset:disabled .btn {
 
 .bg-body-secondary {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity)) !important
+    /* background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity)) !important; */
+    background-color: #00b4d8;
 }
 
 .bg-body-tertiary {
