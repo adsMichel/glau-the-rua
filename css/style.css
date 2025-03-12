@@ -160,3 +160,8 @@ main {
   .divisao > div:nth-child(6) {
     grid-column: 1 / span 2;
   }
+
+  .button-payment {
+    min-width: 110px;
+    justify-content: center;
+  }
