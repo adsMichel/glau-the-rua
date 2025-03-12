@@ -9,9 +9,7 @@ main {
 .btn-app {
     border-radius: 3px;
     background-color: #90e0ef !important;
-    border-right: 1px solid #0077b6;
-    border-left: 1px solid #0077b6;
-    border-top: 1px solid #0077b6;
+    border: 1px solid #0077b6;
     color: #03045e;
     font-size: 16px;
     height: 110px;
