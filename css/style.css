@@ -55,8 +55,9 @@ main {
     background-color: rgba(0,0,0,.1);
     color: rgba(255,255,255,.8);
     display: block;
-    padding: 3px 0;
+    padding: 6px 0;
     position: relative;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     z-index: 10;
